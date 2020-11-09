@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled, {
+    keyframes
+} from "styled-components";
 
 export const SystemBase = styled.div `
 
@@ -384,4 +386,186 @@ export const LoginBase = styled.div `
                 }
             }
         }
+`
+
+
+//-----------------------------------ABOUT US ZONE  -------------------
+
+export const AboutUsBase = styled.div `
+    text-align: center;
+    
+`
+
+export const AboutUsContent = styled.div `
+    display: grid;
+    grid-template-columns: repeat(1, 70%);
+    justify-content: center;
+    background-color: #ffdd93;
+    
+    div{
+        margin: auto;
+    }
+    p{
+        font-size: 20px;
+        margin: auto;
+        text-align: justify;
+        
+    }
+    
+    img{
+        width: 200px;
+        margin: 50px auto;
+    }
+
+    @media only screen and (min-width: 480px) {}
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 45%);
+        
+        p{
+        font-size: 18px;
+    }
+        img{
+        width: 300px;
+        align-content: center;
+    }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        p{
+        font-size: 20px;
+    }
+        img{
+        width: 400px;
+    }
+    }
+
+    @media only screen and (min-width: 1200px) {}
+
+`
+
+
+//-----------------------------------PAYMENT BASE ZONE  -------------------
+
+export const PaymentBaseStyle = styled.div `
+
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content:center;
+
+    @media only screen and (min-width: 480px) {
+        grid-template-columns: repeat(3, 30%);
+
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+    
+`
+
+//-----------------------------------PAYMENT CARD ZONE  -------------------
+
+export const PaymentCardStyle = styled.div `
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #ffefa0;
+
+    p{
+        color: #373a40;
+        margin: 0;
+        &.level{
+            font-size: 26px;
+        }
+        &.price{
+            font-size: 36px;
+        }
+        &.description{
+            font-size: 18px;
+        }
+    }
+
+    button{
+        margin: 0 auto;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        background: rgb(254,255,0);
+        background: linear-gradient(90deg, rgba(254,255,0,0.8631827731092436) 16%, rgba(255,255,255,1) 100%);     
+        border-radius: 30px;
+    }
+
+    @media only screen and (min-width: 480px) {
+        width: 120px;
+        height: 200px;
+        p{
+        &.level{
+            font-size: 22px;
+        }
+        &.price{
+            font-size: 30px;
+        }
+        &.description{
+            font-size: 16px;
+        }
+    }
+
+    button{
+        height: 40px;
+    }
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 200px;
+        height: 210px;
+        p{
+        &.level{
+            font-size: 22px;
+        }
+        &.price{
+            font-size: 30px;
+        }
+        &.description{
+            font-size: 16px;
+        }
+    }
+
+    button{
+        height: 40px;
+    }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 250px;
+        height: 270px;
+        p{
+        &.level{
+            font-size: 26px;
+        }
+        &.price{
+            font-size: 36px;
+        }
+        &.description{
+            font-size: 20px;
+        }
+    }
+
+    button{
+        height: 40px;
+        width: 150px;
+    }
+    }
+
+    @media only screen and (min-width: 1200px) {}
 `
