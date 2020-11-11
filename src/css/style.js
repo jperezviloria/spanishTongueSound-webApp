@@ -1,10 +1,14 @@
-import styled from "styled-components";
+import styled, {
+    keyframes
+} from "styled-components";
 
 export const SystemBase = styled.div `
 
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
+    //background-color: #f6f5f5;
+    background-image: url("https://www.conmishijos.com/uploads/hojasotono.jpg");
     
 
 `
@@ -241,9 +245,10 @@ div{
     width: 150px;
     margin: 20px auto;
     text-align: justify;
+    background-color: white;
     
     &.QAParticularUnit{
-        border: 1px solid black;
+        border: 3px solid orange;
         padding: 0px 10px;
         border-radius: 4px;
     }
@@ -283,6 +288,7 @@ export const PensumBase = styled.div `
 
     h1{
         text-align: center;
+        padding-top: 100px;
         
     }
 
@@ -353,11 +359,11 @@ export const LoginBase = styled.div `
         display: grid;
         grid-template-columns: repeat(1, 80%);
         width: 30%;
-        margin: 20px auto;
+        margin: 300px auto;
         justify-content: center;
         text-align: center;
         border-radius: 4px;
-
+    
         div{
             &.LoginInput{
                 display: grid;
@@ -384,4 +390,189 @@ export const LoginBase = styled.div `
                 }
             }
         }
+`
+
+
+//-----------------------------------ABOUT US ZONE  -------------------
+
+export const AboutUsBase = styled.div `
+    text-align: center;
+    background-color: #ffdd93;
+`
+
+export const AboutUsContent = styled.div `
+    display: grid;
+    grid-template-columns: repeat(1, 70%);
+    justify-content: center;
+    
+    
+    div{
+        margin: auto;
+    }
+    p{
+        font-size: 20px;
+        margin: auto;
+        text-align: justify;
+        
+    }
+    
+    img{
+        width: 200px;
+        margin: 50px auto;
+    }
+
+    @media only screen and (min-width: 480px) {}
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 45%);
+        
+        p{
+        font-size: 18px;
+    }
+        img{
+        width: 300px;
+        align-content: center;
+    }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        p{
+        font-size: 20px;
+    }
+        img{
+        width: 400px;
+    }
+    }
+
+    @media only screen and (min-width: 1200px) {}
+
+`
+
+
+//-----------------------------------PAYMENT BASE ZONE  -------------------
+
+export const PaymentBaseStyle = styled.div `
+
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content:center;
+    background-color: #ffefa0;
+
+    @media only screen and (min-width: 480px) {
+        grid-template-columns: repeat(3, 30%);
+
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+    
+`
+
+//-----------------------------------PAYMENT CARD ZONE  -------------------
+
+export const PaymentCardStyle = styled.div `
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid orange;
+    box-shadow: 5px 2px 20px #bbbfca;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    margin: 10px auto;
+    /* background-color: #ffefa0; */
+    background-color: #f6f5f5;
+
+    p{
+        color: #373a40;
+        margin: 0;
+        &.level{
+            font-size: 26px;
+        }
+        &.price{
+            font-size: 36px;
+        }
+        &.description{
+            font-size: 18px;
+        }
+    }
+
+    button{
+        margin: 0 auto;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        background: rgb(254,255,0);
+        background: linear-gradient(90deg, rgba(254,255,0,0.8631827731092436) 16%, rgba(255,255,255,1) 100%);     
+        border-radius: 30px;
+    }
+
+    @media only screen and (min-width: 480px) {
+        width: 120px;
+        height: 200px;
+        p{
+        &.level{
+            font-size: 22px;
+        }
+        &.price{
+            font-size: 30px;
+        }
+        &.description{
+            font-size: 16px;
+        }
+    }
+
+    button{
+        height: 40px;
+    }
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 200px;
+        height: 210px;
+        p{
+        &.level{
+            font-size: 22px;
+        }
+        &.price{
+            font-size: 30px;
+        }
+        &.description{
+            font-size: 16px;
+        }
+    }
+
+    button{
+        height: 40px;
+    }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 250px;
+        height: 270px;
+        p{
+        &.level{
+            font-size: 26px;
+        }
+        &.price{
+            font-size: 36px;
+        }
+        &.description{
+            font-size: 20px;
+        }
+    }
+
+    button{
+        height: 40px;
+        width: 150px;
+    }
+    }
+
+    @media only screen and (min-width: 1200px) {}
 `
