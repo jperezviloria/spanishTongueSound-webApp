@@ -23,9 +23,6 @@ export default class AboudUs extends React.Component {
             <AboutUsBase>
                 <h1>About Us</h1>
                 <AboutUsContent>
-                    <img data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" src={image1} alt="" />
                     <div>
 
                     <p data-aos="fade-left"
@@ -41,6 +38,9 @@ export default class AboudUs extends React.Component {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate vitae adipisci fuga eius dolorum. Commodi, reprehenderit ut voluptatem nobis delectus quos officia sequi sint ipsum doloribus enim distinctio illo ad saepe nulla nam repellat adipisci veritatis architecto rerum repellendus quidem sed mollitia fugiat.</p>
 
                     </div>
+                    <img data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" src={image1} alt="" />
 
 
                 </AboutUsContent>

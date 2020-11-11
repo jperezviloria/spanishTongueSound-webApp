@@ -7,6 +7,8 @@ export const SystemBase = styled.div `
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
+    //background-color: #f6f5f5;
+    background-image: url("https://www.conmishijos.com/uploads/hojasotono.jpg");
     
 
 `
@@ -243,9 +245,10 @@ div{
     width: 150px;
     margin: 20px auto;
     text-align: justify;
+    background-color: white;
     
     &.QAParticularUnit{
-        border: 1px solid black;
+        border: 3px solid orange;
         padding: 0px 10px;
         border-radius: 4px;
     }
@@ -285,6 +288,7 @@ export const PensumBase = styled.div `
 
     h1{
         text-align: center;
+        padding-top: 100px;
         
     }
 
@@ -355,11 +359,11 @@ export const LoginBase = styled.div `
         display: grid;
         grid-template-columns: repeat(1, 80%);
         width: 30%;
-        margin: 20px auto;
+        margin: 300px auto;
         justify-content: center;
         text-align: center;
         border-radius: 4px;
-
+    
         div{
             &.LoginInput{
                 display: grid;
@@ -393,14 +397,14 @@ export const LoginBase = styled.div `
 
 export const AboutUsBase = styled.div `
     text-align: center;
-    
+    background-color: #ffdd93;
 `
 
 export const AboutUsContent = styled.div `
     display: grid;
     grid-template-columns: repeat(1, 70%);
     justify-content: center;
-    background-color: #ffdd93;
+    
     
     div{
         margin: auto;
@@ -453,6 +457,7 @@ export const PaymentBaseStyle = styled.div `
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content:center;
+    background-color: #ffefa0;
 
     @media only screen and (min-width: 480px) {
         grid-template-columns: repeat(3, 30%);
@@ -475,12 +480,14 @@ export const PaymentCardStyle = styled.div `
     display: grid;
     justify-content: center;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid orange;
+    box-shadow: 5px 2px 20px #bbbfca;
     border-radius: 10px;
     width: 200px;
     height: 300px;
     margin: 10px auto;
-    background-color: #ffefa0;
+    /* background-color: #ffefa0; */
+    background-color: #f6f5f5;
 
     p{
         color: #373a40;
