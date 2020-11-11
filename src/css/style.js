@@ -135,7 +135,7 @@ div{
 `;
 
 
-//-----------------------------------MISCELANEOUD ZONE  -------------------
+//-----------------------------------MISCELANEOUS ZONE  -------------------
 
 export const MiscellaneousBase = styled.div `
 

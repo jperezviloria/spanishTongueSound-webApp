@@ -16,19 +16,19 @@ export default class PaymentBase extends React.Component {
         return (
             <PaymentBaseStyle data-aos="zoom-out">
                 <PaymentCard
-                    level="basic"
-                    price="20"
-                    description="Teaching the first topics to know Spanish"
+                    level="Level 1"
+                    price="$12"
+                    description="Introduction/Basic level of Spanish"
                     paymentLink="https://www.paypal.com/myaccount/summary" />
                 <PaymentCard
-                    level="bussines"
-                    price="50"
-                    description="More videos to learn Spanish"
+                    level="Level 2"
+                    price="$12"
+                    description="More in depth Spanish course"
                     paymentLink="https://www.paypal.com/myaccount/summary" />
                 <PaymentCard
-                    level="deluxe"
-                    price="60"
-                    description="Deluxe course with every documentations and videos"
+                    level="Level 3"
+                    price="$12"
+                    description="Advanced Spanish, conversational"
                     paymentLink="https://www.paypal.com/myaccount/summary" />
 
             </PaymentBaseStyle>

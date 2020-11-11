@@ -4,13 +4,17 @@
   left: 0;
   width: 100%;
   background-color: #ee6f57;
-  height: 86px;
+  height: 92px;
   font-family: "Farro", sans-serif;
   z-index: 3
 }
 
 img {
+  padding-top: 25px;
   width: 80px;
+}
+.logo_subtitle {
+  margin-top: 0px;
 }
 .toolbar__navigation {
   display: flex;
@@ -20,7 +24,9 @@ img {
 }
 
 .toolbar__logo {
-  margin-left: 1rem;
+  display: grid;
+  justify-items: center;
+  /* margin-left: 1rem; */
 }
 
 .toolbar__logo a {
