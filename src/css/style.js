@@ -576,3 +576,27 @@ export const PaymentCardStyle = styled.div `
 
     @media only screen and (min-width: 1200px) {}
 `
+
+
+//-----------------------------------ADMIN DASHBOARD ZONE  -------------------
+
+export const AdminDashboardStyle = styled.div `
+
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content:center;
+    background-color: #ffefa0;
+
+    @media only screen and (min-width: 480px) {
+        grid-template-columns: repeat(2,45%);
+
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+`
