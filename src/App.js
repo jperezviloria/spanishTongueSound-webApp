@@ -3,6 +3,7 @@ import React from 'react';
 import Login from "./components/Login";
 import Navbar from "./components/Nav"
 import Index from "./components/Index";
+import AdminDashboard from "./components/AdminDashboard";
 
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
@@ -16,6 +17,7 @@ function App() {
       <Switch>
       <Route path="/" exact component = {Index}/> 
       <Route path = "/login" component = {Login}/>
+      <Route path = "/admin" component = {AdminDashboard}/>
         
       </Switch>
       </Router>

@@ -14,7 +14,10 @@ function Login(){
 
             </div>
             <div>
+                <a href="/admin">
+
                 <button type="submit">Login</button>
+                </a>
             </div>
         </LoginBase>
     )

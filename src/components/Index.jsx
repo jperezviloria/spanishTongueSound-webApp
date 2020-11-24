@@ -4,14 +4,13 @@ import QA from "./Q&A"
 import Pensum from "./Pensum";
 import AboutUs from "./AboutUs";
 import PaymentBase from "./PaymentBase"
-import AdminDashboard from "./AdminDashboard";
+import Presentation from "./Presentation";
 
 export default class Index extends React.Component {
     render() {
         return (
             <div>
-                <AdminDashboard/>
-                <Pensum />
+                <Presentation/>
                 <PaymentBase />
                 <QA />
                 <AboutUs />

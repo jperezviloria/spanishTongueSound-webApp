@@ -7,8 +7,10 @@ export const SystemBase = styled.div `
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
-    //background-color: #f6f5f5;
-    background-image: url("https://www.conmishijos.com/uploads/hojasotono.jpg");
+    background-color: #fff8cd;
+    //background-image: url("https://www.conmishijos.com/uploads/hojasotono.jpg");
+    min-height: 1000px;
+    color: #211717;
     
 
 `
@@ -133,6 +135,38 @@ div{
 @media only screen and (min-width: 1200px) {}
 
 `;
+
+
+
+//-----------------------------------PRESENTATIONS ZONE  -------------------
+
+
+export const PresentationStyle = styled.div `
+
+display: grid;
+
+grid-template-columns: repeat(2,50%);
+justify-content: center;
+
+
+img{
+    margin:40px auto;
+    width:500px;
+}
+
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+`
 
 
 //-----------------------------------MISCELANEOUD ZONE  -------------------
@@ -359,7 +393,7 @@ export const LoginBase = styled.div `
         display: grid;
         grid-template-columns: repeat(1, 80%);
         width: 30%;
-        margin: 300px auto;
+        margin:  auto;
         justify-content: center;
         text-align: center;
         border-radius: 4px;
@@ -582,15 +616,34 @@ export const PaymentCardStyle = styled.div `
 
 export const AdminDashboardStyle = styled.div `
 
-
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content:center;
     background-color: #ffefa0;
+    margin-top: 85px;
+
+    div{
+        &.MailAndLevels{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            justify-items: center;
+            
+
+            div{
+                border: 3px solid blue;
+                width: 95%;
+                height: 600px;
+
+            }
+        }
+        
+        &.UsersConfiguration{
+            
+            display: grid;
+            color: #db6400;
+            justify-content: center;
+        }
+    
+    }
 
     @media only screen and (min-width: 480px) {
-        grid-template-columns: repeat(2,45%);
-
     }
 
     @media only screen and (min-width: 768px) {
@@ -599,4 +652,159 @@ export const AdminDashboardStyle = styled.div `
     @media only screen and (min-width: 1024px) {}
 
     @media only screen and (min-width: 1200px) {}
+`
+
+//-----------------------------------MAILS BASE ZONE  -------------------
+
+export const EmailsTicketStyle = styled.div `
+
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    overflow-y: auto;
+    
+    
+
+    form{
+        width: 90%;
+        margin: 10px auto;
+        border: 3px solid black;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    button{
+        width:90px;
+        margin: 6px;
+    }
+    
+
+
+
+
+    @media only screen and (min-width: 480px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+    
+`
+//-----------------------------------STUDENTS BY LEVEL BASE ZONE  -------------------
+
+export const StudentByLevelStyle = styled.div `
+
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    
+    
+
+    form{
+        width: 90%;
+        margin: 10px auto;
+        border: 3px solid black;
+        border-radius: 7px;
+        
+        
+    }
+
+    div{
+
+        &.divisionStudentByLevel{
+
+            overflow-y: auto;
+        }
+    }
+
+
+
+
+    @media only screen and (min-width: 480px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+    
+`
+
+//-----------------------------------NAVBAR CONFIGURATION ZONE  -------------------
+
+export const NavbarConfigurationStyle = styled.div `
+
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+    
+    a{
+        text-decoration: none;
+        padding: 2px 3px;
+        background-color: #ffa45b;
+        margin: 3px;
+        border-radius: 7px;
+        color: white;
+        
+    }
+    
+
+
+    @media only screen and (min-width: 480px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+    
+`
+//-----------------------------------FORM CONFIGURATIONS BASE ZONE  -------------------
+
+export const FormConfigurationStyle = styled.div `
+
+    form{
+        width:300px;
+        height: 200px;
+        
+        display: grid;
+    }
+    p{
+        text-align: center;
+    }
+    input{
+        height:50px;
+        border-radius: 40px;
+        border: 2px solid #ffa62b;
+        text-align: center;
+
+    }
+    button{
+        width: 150px;
+        border-radius: 20px;
+        margin: 0 auto 20px;
+        border: 5px solid #db6400;
+        height: 50px;
+        
+    }
+
+    @media only screen and (min-width: 480px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (min-width: 1200px) {}
+    
 `

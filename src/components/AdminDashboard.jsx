@@ -4,19 +4,21 @@ import EmailPanel from "./EmailPanel";
 import StudentsByLevel from "./StudentsByLevel";
 import UsersConfigurationForm from "./UsersConfigurationForm";
 
+import { AdminDashboardStyle } from "../css/style";
+
 export default class AdminDashboard extends React.Component {
 
 
     render() {
         return (
-            <div>
-                <div>
+            <AdminDashboardStyle>
+                <div className="MailAndLevels">
                     <EmailPanel />
                     <StudentsByLevel />
                 </div>
                 
-                <UsersConfigurationForm/>
-            </div>
+                <UsersConfigurationForm  />
+            </AdminDashboardStyle>
         )
     }
 }
