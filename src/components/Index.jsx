@@ -6,16 +6,19 @@ import AboutUs from "./AboutUs";
 import PaymentBase from "./PaymentBase"
 import Presentation from "./Presentation";
 
+
+import { IndexStyle } from "../css/style";
+
 export default class Index extends React.Component {
     render() {
         return (
-            <div>
-                <Presentation/>
+            <IndexStyle>
+                <Presentation />
                 <PaymentBase />
                 <QA />
                 <AboutUs />
                 <Miscellaneous />
-            </div>
+            </IndexStyle>
         )
     }
 }

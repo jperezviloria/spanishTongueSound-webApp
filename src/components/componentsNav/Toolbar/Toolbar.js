@@ -3,6 +3,8 @@ import React from 'react';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 
+import { Link } from "react-scroll";
+
 const toolbar = props => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
@@ -13,11 +15,11 @@ const toolbar = props => (
       <div className="spacer" />
       <div className="toolbar_navigation-items">
         <ul>
-          <li><a href="/">Price</a></li>
-          <li><a href="/">About us</a></li>
-          <li><a href="/">Q&A</a></li>
-          <li><a href="/">Contact form</a></li>
-          <li><a href="/login">Admin</a></li>
+          <li><Link to="price" smooth={true} duration={1000}>Price</Link></li>
+          <li><Link to="about" smooth={true} duration={1000}>About us</Link></li>
+          <li><Link to="qa" smooth={true} duration={1000}>Q&A</Link></li>
+          <li><Link to="contactform" smooth={true} duration={1000}>Contact form</Link></li>
+          <li><a href="/admin">Admin</a></li>
         </ul>
       </div>
     </nav>

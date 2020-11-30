@@ -138,6 +138,15 @@ div{
 
 
 
+//-----------------------------------INDEX ZONE ----------------------
+
+export const IndexStyle = styled.div`
+scroll-behavior: smooth;
+
+`
+
+
+
 //-----------------------------------PRESENTATIONS ZONE  -------------------
 
 

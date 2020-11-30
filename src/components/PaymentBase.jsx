@@ -14,7 +14,7 @@ export default class PaymentBase extends React.Component {
 
     render(props) {
         return (
-            <PaymentBaseStyle data-aos="zoom-out">
+            <PaymentBaseStyle data-aos="zoom-out" id="price">
                 <PaymentCard
                     level="basic"
                     price="20"

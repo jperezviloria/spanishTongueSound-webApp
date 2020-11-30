@@ -20,7 +20,7 @@ export default class AboudUs extends React.Component {
 
     render() {
         return (
-            <AboutUsBase>
+            <AboutUsBase id="about">
                 <h1>About Us</h1>
                 <AboutUsContent>
                     <img data-aos="fade-right"

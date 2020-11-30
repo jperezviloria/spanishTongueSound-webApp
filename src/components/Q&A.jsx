@@ -4,7 +4,7 @@ import { QABase } from "../css/style";
 
 function QA() {
     return (
-        <QABase>
+        <QABase id="qa">
             <div className = "QAParticularUnit">
                 <div>
                     <div className = "QASubtitle">question</div>
